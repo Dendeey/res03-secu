@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sécu</title>
+    </head>
+    <body>
+        <form action="defense.php" method="post">
+            <fieldset>
+                <label for="username">Username</label>
+                <input type="username" name="username" />
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" name="email"/>
+            </fieldset>
+            <fieldset>
+                <label for="password">Password</label>
+                <input type="password" name="password"/>
+            </fieldset>
+            <fieldset>
+                <input type="submit" name="submit" value="Créer son compte" />
+            </fieldset>
+            <input type="hidden" name="formRegister" value = "register" />
+        </form>
+        <?= var_dump($_POST); ?>
+    </body>
+</html>
